@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bienvenido</title>
+</head>
+
+<body>
+    <div class="container" id="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form id="login-form">
+            <div>
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <ul id="messages"></ul>
+    </div>
+
+    <div class="container" id="verify-container" style="display: none;">
+        <h2>Verificación de Código</h2>
+        <form id="verify-form">
+            <div>
+                <label for="code">Código de Verificación</label>
+                <input type="text" id="code" required>
+            </div>
+            <button type="submit">Verificar</button>
+        </form>
+        <p id="show-code"></p> <!-- Este es el elemento añadido -->
+        <ul id="verify-messages"></ul>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    
+   
+</body>
+</html>
